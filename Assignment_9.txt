@@ -1,0 +1,32 @@
+Question no: 1. Carefully observe this example.
+ function OuterFunction()
+ { 
+     var outerVariable = 100;
+     function InnerFunction() 
+     {
+         alert(outerVariable);
+     }
+     return InnerFunction;
+ }
+ var innerFunc = OuterFunction();
+ innerFunc();
+
+
+a) Is the InnerFunction() a closure?
+Ans: Yes, InnerFunction() is a closure. 
+
+b) What is output of this program
+Ans: 100
+
+Question no: 2. What is the difference between a closure and a scope ?
+Ans: Closure is inner function of a nested function whereas scope is variables that are used in.
+say, from the given example, the variable outerVariable is used in innerfunction/closure. 
+so the scope of this variable is within this entire nested function. 
+this is also called as lexical scope.
+
+
+
+Question no: 3. What is a lexical scope and how is it related to closure?
+Ans: Lexical scope is, to access a variable(s) in a zone. 
+In a nested function, the inner function is closure. 
+Here, inner function cas access those variables from the outer function to reduce code redundancy. 
